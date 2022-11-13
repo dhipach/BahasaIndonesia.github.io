@@ -1,0 +1,255 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    background: #333;
+    padding: 0;
+    margin: 0;
+	display:flex;
+	justfy-content:center;
+	align-itms:center;
+    font-family: 'Varela Round', sans-serif;
+}
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #666;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+   background: linear-gradient(180deg, #666 0%, #333 100%);
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #FFF;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+table{
+	text-align: justify;
+}
+.copy-rigt{color:#6F6F6F;
+margin:2%
+}
+.tex{text-indent: 45px;
+width:90%
+height:90%
+padding-left:20px;
+
+}
+.mainInner img{
+	margin:20px auto
+}
+.srch{
+	position:absolute;
+	margin:0;
+	padding:0;
+}
+</style>
+<head>
+	<title>Hikayat Bahasa Indonesia</title>
+</head>
+<body>
+<div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li class=" dark mode">KELOMPOK 3 <span>DHIPACHPDD</span></li>
+      <li><a href="BahasaIndonesia.html" target="_blank">UTAMA</a></li>
+      <li><a href="angota kelompok.html" target="_blank">ANGGOTA</a></li>
+      <li><a href="penjelasan.html" target="_blank">PENJELASAN HIKAYAT</a></li>
+        <ul>
+            <li><a href="" target="_self" style="font-size:"2px">Ciri-Ciri</a></li>
+            <li><a href="" target="_self" style="font-size:"2px">Jenis-Jenis</a></li>
+            <li><a href="" target="_self" style="font-size:"2px">Bentuk</a></li>
+            <li><a href="" target="_self" style="font-size:"2px">Nilai-Nilai</a></li>  
+            <li><a href="" target="_self" style="font-size:"2px">karakteristik</a></li>     
+            
+             </ul>
+      </ul>
+  </div>
+  <div id='center' class="main center">
+    <div class="mainInner">
+    <img src="bahan/RA.jpg" width="430" height="300">
+    </div>
+    <div class="mainInner">
+      <div>HIKAYAT RAMA DAN SINTA</div>
+    </div>
+    <table align="center" border="0,5" width="90%" bgcolor="#FFFFFF"> 
+        <tr bgcolor="#333333">
+            <td align="center" width="80%" height="80%">
+           <div class="tex"> <p align="justify" >
+        <font color="#FFFFFF" face="Times New Roman, Times, serif" size="+2">		suatu hari, Sri Rama dan Laksamana pergi mencari Sita Dewi. Mereka berjalan menelusuri hutan belantara namun tak kunjung menemukan Sita Dewi. Setelah sekian lama mereka berjalan menelusuri hutan rimba, mereka bertemu dengan seekor burung jantan dan empat ekor burung betina. Lalu Sri Rama bertanya pada burung jantan tentang keberadaan Sita Dewi yang diculik orang. Burung jantan mengatakan kepada Sri Rama bahwa ia bisa menjaga istrinya dengan baik, tak seperti dia yang memiliki empat istri namun bisa menjaganya. Dengan perkataannya seperti itu Sri Rama tersinggung. Kemudian, Sri Rama memohon pada Dewata Mulia Raya semoga istri-istrinya lenyap dari matanya, sehingga burung itu  menjadi buta atas takdir Dewata Mulia Raya dan tak dapat melihat istri-istrinya lagi
+       
+<br>
+<br>
+
+
+	Sri Rama dan Laksamana pun melanjutkan perjalanannya, sian dan malam tiada henti  di tengah perjalanan, mereka bertemu dengan seekor bangau yang sedang minum di tepi danau. Sri Rama bertanya pada bangau itu. Bangau mengatakan bahwa ia melihat bayang-bayang seorang wanita dibawa oleh Maharaja Rawana. Wanita itu berpakaian kain kusuma warna keemas-emasan. Sri Rama merasa senang karena mendapat petunjuk dari cerita bangau itu. Sebagai balas budi, Sri Rama memohon pada Dewata Mulia Raya untuk membuat leher bangau menjadi lebih panjang sesuai dengan keinginan bangau. Namun, Sri Rama khawatir jika leher bangau terlalu panjang maka dapat dijerat orang.<br>
+<br>
+
+
+	Setelah Sri Rama memohon do’a ia kembali melanjutkan perjalanan. Tak lama kemudian datanglah seorang anak yang hendak mengail. Tetapi anak itu melihat leher bangau yang sangat panjang seperti ular  lalu dijerat leher bangau itu dan dibawa pulang hendak dijual ke pasar. Sri Rama dan Laksamana bertemu dengan anak itu dan membebaskan bangau dengan memberi anak itu sebuah cincin.<br>
+<br>
+
+
+
+	Ketika dalam perjalanan, Sri Rama merasa haus dan menyuruh Laksamana untuk mencarikannya air. Sri Rama menyuruh Laksamana untuk mengikuti jatunya anak panah yang dipanahkannya agar dapat menemukan sumber air. Setelah berhasil mendapatkan air itu, Laksamana membawanya pada Sri Rama. Saat Sri Rama meminum air itu, ternyata air itu busuk. Sri Rama meminta Laksamana untuk mengantarnya ke tempat sumber air itu. Sesampai di tempat itu, dilihatnya air itu berlinang-linang. Sri Rama mengatakan bahwa dulu pernah ada binatang besar yang mati di hulu sungai itu. Kemudian, Sri Rama dan Laksamana memutuskan untuk mengikuti jalan ke hulu sungai itu.<br>
+<br>
+
+
+
+	Mereka bertemu dengan seekor burung besar seperti sebuah gunung bernama Jentayu yang tertambat sayapnya dan yang sebelah rebah. Sri Rama bertanya padanya mengapa sampai Jentayu seperti itu. Jentayu menceritakan semuanya pada Sri Rama tentang pertarungannya melawan Maharaja Rawana. Setelah Jentayu selesai bercerita, ia memberikan cincin yang dilontarkan oleh Sita Dewi saat Jentayu gugur ke bumi saat berperang dengan Maharaja Rawana. Kemudian bergegeslah cincin itu diambil oleh Sri Rama. Bahagialah Sri Rama melihat cincin itu memang benar cincin istrinya, Sita Dewi.
+<br>
+<br>
+
+
+	Jentayu berpesan pada Sri Rama jika tuan Sri Rama pergi ke negeri Langka Puri, Sri Rama tidak boleh singgah ke tepi laut karena di sana terdapat gunung bernama Gendara Wanam. Di dalam bukit tersebut ada saudara Jentayu yang bernama Dasampani sedang bertapa. Jentayu tak ingin saudaranya itu mengetahui bahwa dirinya akan segera mati. Dan jika ia mati mayatnya tidak boleh dibakar di bumi yang ada tempat manusia. Setelah Jentayu selesai berpesan, ia pun mati.<br>
+<br>
+
+
+	Sri Rama menyuruh Laksamana  mencari tempat yang tidak terdapat manusia dengan memberinya sebuah tongkat. Tetapi, Laksamana tidak berhasil menemukan tempat itu. Lalu ia kembali pada Sri Rama. Laksamana mengatakan pada Sri Rama bahwa ia tidak dapat menemukan tempat sesuai perintah Sri Rama. Kemudian, Sri Rama menyuruh Laksamana untuk menghimpun semua kayu api dan meletakkannya di tanagn Sri Rama. Lalu diletakkannya bangkai Jentayu di atas kayu api itu dan di bakar oleh Laksamana. Beberapa lama kemudian, api itu padam. Laksamana heran melihat kesaktian Sri Rama yang tangannya tidak terluka bakar sedikitpun. Kemudian, mereka melanjutkan perjalanan meninggalkan tempat itu.<br>
+<br>
+
+			  </font>
+                </p></div>
+            </td>
+        </tr>
+</table>
+    <br/>
+    <br/>
+    <br/>
+    <div class="copy-rigt" align="right"><span>&copy; 2022 DHIPACHPDD</span></div>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    background: #333;
+    padding: 0;
+    margin: 0;
+	justfy-content:center;
+	align-itms:center;
+    font-family: 'Varela Round', sans-serif;
+}
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #666;
+    position: fixed;
+    height: 60px!important;
+    overflow: hidden;
+    z-index: 10;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #666 0%, #333 100%);
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #FFF;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+table{
+	border-color:#666;
+	te
+}
+.copy-rigt{color:#6F6F6F;
+margin:2%
+}
+.tex{text-indent: 45px;
+width:90%
+height:90%
+padding-left:20px;
+
+}
+.mainInner img{
+	margin:20px auto
+}
+</style>
+<head>
+	<title>ANGGOTA</title>
+</head>
+<body>
+<div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li class=" dark mode">KELOMPOK 3 <span>DHIPACHPDD</span></li>
+      <li><a href="BahasaIndonesia.html" target="_blank">UTAMA</a></li>
+      <li><a href="angota kelompok.html" target="_blank">ANGGOTA</a></li>
+      <li><a href="penjelasan.html" target="_blank">PENJELASAN HIKAYAT</a></li>
+      <ul>
+            <li><a href="" target="_self" style="font-size:"2px">Ciri-Ciri</a></li>
+            <li><a href="" target="_self" style="font-size:"2px">Jenis-Jenis</a></li>
+            <li><a href="" target="_self" style="font-size:"2px">Bentuk</a></li>
+            <li><a href="" target="_self" style="font-size:"2px">Nilai-Nilai</a></li>  
+            <li><a href="" target="_self" style="font-size:"2px">karakteristik</a></li>     
+            
+             </ul>
+     
+      </ul>
+  </div>
+  <div id='center' class="main center">
+    <div class="mainInner">
+   
+    </div>
+    <div class="mainInner">
+    <p align="center"><font size="+4">ANGGOTA KELOMPOK 3</font></p><br>
+
+
+     <hr color="#666666" size="0,5" width="95%"/>
+    <!--1-->
+    <table width="70%" align="center">
+    	<tr>
+    	
+    	<td><img src="bahan/f21.jpg" loading="lazy" width="130" height="160"></td>
+        <td>
+       <font color="#FFFFFF"> 
+        <table>
+      <tr >  	
+    	<td><font color="#FFFFFF"> Nama</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF">I Made Shadewa Dhipayana A.H.S</font></td>
+      </tr>
+      <tr>
+      <td><font color="#FFFFFF"> Jenis Kelamin</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Laki-Laki</font></td>
+      </tr>
+      
+       <tr>  	
+    	<td><font color="#FFFFFF"> Nis</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> 6210</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Jurusan</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Rekayasa Perangkat Lunak</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Alamat Sekolah</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td> <font color="#FFFFFF"> Jl.Tukad Citarum No.44 Denpasar</font></td>
+      </tr>
+      
+      
+      
+        </table>
+        </font>
+        </td>
+    </tr>
+    </table>
+    <hr color="#666666" size="0,5" width="90%"/>
+    <!--2-->
+    <table width="70%" align="center">
+    	<tr>
+    	
+    	<td><img src="bahan/f5.jpg" loading="lazy" width="130" height="160"></td>
+        <td>
+       <font color="#FFFFFF"> 
+        <table>
+      <tr >  	
+    	<td><font color="#FFFFFF"> Nama</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF">Idham Satria Kurniawan</font></td>
+      </tr>
+      <tr>
+      <td><font color="#FFFFFF"> Jenis Kelamin</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Laki-Laki</font></td>
+      </tr>
+      
+       <tr>  	
+    	<td><font color="#FFFFFF"> Nis</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> 6216</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Jurusan</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Rekayasa Perangkat Lunak</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Alamat Sekolah</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td> <font color="#FFFFFF"> Jl.Tukad Citarum No.44 Denpasar</font></td>
+      </tr>
+      
+      
+      
+        </table>
+        </font>
+        </td>
+    </tr>
+    </table>
+     <hr color="#666666" size="0,5" width="90%"/>
+    <!--3-->
+    <table width="70%" align="center">
+    	<tr>
+    	
+    	<td><img src="bahan/f6.jpg" loading="lazy" width="130" height="160"></td>
+        <td>
+       <font color="#FFFFFF"> 
+        <table>
+      <tr >  	
+    	<td><font color="#FFFFFF"> Nama</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> Kadek Adhipanna Surya Nata</font></td>
+      </tr>
+      <tr>
+      <td><font color="#FFFFFF"> Jenis Kelamin</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Laki-Laki</font></td>
+      </tr>
+      
+       <tr>  	
+    	<td><font color="#FFFFFF"> Nis</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> 6218</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Jurusan</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Rekayasa Perangkat Lunak</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Alamat Sekolah</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td> <font color="#FFFFFF"> Jl.Tukad Citarum No.44 Denpasar</font></td>
+      </tr>
+      
+      
+      
+        </table>
+        </font>
+        </td>
+    </tr>
+    </table>
+     <hr color="#666666" size="0,5" width="90%" />
+    <!--4-->
+    <table width="70%" align="center">
+    	<tr>
+    	
+    	<td><img src="bahan/f4.jpg" loading="lazy" width="130" height="160"></td>
+        <td>
+       <font color="#FFFFFF"> 
+        <table>
+      <tr >  	
+    	<td><font color="#FFFFFF"> Nama</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> Ni Putu Yuni Listya Dewi</font></td>
+      </tr>
+      <tr>
+      <td><font color="#FFFFFF"> Jenis Kelamin</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Prempuan</font></td>
+      </tr>
+      
+       <tr>  	
+    	<td><font color="#FFFFFF"> Nis</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> 6222</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Jurusan</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Rekayasa Perangkat Lunak</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Alamat Sekolah</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td> <font color="#FFFFFF"> Jl.Tukad Citarum No.44 Denpasar</font></td>
+      </tr>
+      
+      
+      
+        </table>
+        </font>
+        </td>
+    </tr>
+    </table>
+     <hr color="#666666" size="0,5" width="90%"/>
+    <!--5-->
+    <table width="70%" align="center">
+    	<tr>
+    	
+    	<td><img src="bahan/f3.jpg" width="130" height="160"></td>
+        <td>
+       <font color="#FFFFFF"> 
+        <table>
+      <tr >  	
+    	<td><font color="#FFFFFF"> Nama</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> Rafael Pambudi Santos Djati</font></td>
+      </tr>
+      <tr>
+      <td><font color="#FFFFFF"> Jenis Kelamin</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Laki-Laki</font></td>
+      </tr>
+      
+       <tr>  	
+    	<td><font color="#FFFFFF"> Nis</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> 6228</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Jurusan</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Rekayasa Perangkat Lunak</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Alamat Sekolah</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td> <font color="#FFFFFF"> Jl.Tukad Citarum No.44 Denpasar</font></td>
+      </tr>
+      
+      
+      
+        </table>
+        </font>
+        </td>
+    </tr>
+    </table>
+     <hr color="#666666" size="0,5" width="90%"/>
+    <!--6-->
+    <table width="70%" align="center">
+    	<tr>
+    	
+    	<td><img src="bahan/f1.jpg" loading="lazy" width="130" height="160"></td>
+        <td>
+       <font color="#FFFFFF"> 
+        <table>
+      <tr >  	
+    	<td><font color="#FFFFFF"> Nama</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> Yosua Christian Hariyanto</font></td>
+      </tr>
+      <tr>
+      <td><font color="#FFFFFF"> Jenis Kelamin</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Laki-Laki</font></td>
+      </tr>
+      
+       <tr>  	
+    	<td><font color="#FFFFFF"> Nis</font></td>
+        <td ><font color="#FFFFFF"> :</font></td>
+        <td><font color="#FFFFFF"> 6232</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Jurusan</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td><font color="#FFFFFF"> Rekayasa Perangkat Lunak</font></td>
+      </tr>
+      
+      <tr>
+      <td><font color="#FFFFFF"> Alamat Sekolah</font></td>
+      <td><font color="#FFFFFF"> :</font></td>
+      <td> <font color="#FFFFFF"> Jl.Tukad Citarum No.44 Denpasar</font></td>
+      </tr>
+      
+      
+      
+        </table>
+        </font>
+        </td>
+    </tr>
+    </table>
+     <hr color="#666666" size="0,5" width="90%"/>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <div class="copy-rigt" align="right"><span>&copy; 2022 DHIPACHPDD</span></div>
+</body>
+</html>
